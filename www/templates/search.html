@@ -1,0 +1,26 @@
+<ion-view view-title="Search">
+  <ion-content>
+
+    <h1>Listar tickets abiertos</h1>
+
+    <table class="table" style="border:1px solid black; width:98%" >
+    <tr>
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>Solicitud</th>
+      <th>Estado</th>
+      <th>acciones</th>
+    </tr>
+    <tr ng-repeat="t in tickets">
+      <td>{{ t.nombre_usuario }}</td>
+      <td>{{ t.correo_usuario }}</td>
+      <td>{{ t.solicitud }}</td>
+      <td>{{ t.estado }}</td>
+
+      <td>
+        <a href="#!/ticket/procesar/{{t.id }}" >Procesar</a>
+      </td>
+    </tr>
+  </table>
+  </ion-content>
+</ion-view>

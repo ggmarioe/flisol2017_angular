@@ -1,0 +1,15 @@
+<ion-view view-title="Listar tickets abiertos">
+  <ion-content>
+
+      <h4 class="energized">{{ mensaje }}</h4>
+
+    <h1>Ticket {{ data.id }}</h1>
+
+    <p>Nombre usuario: {{ data.nombre_usuario }}</p>
+    <p>Correo electrónico {{ data.correo_usuario }}</p>
+    <p>solicitud: {{ data.solicitud }}</p>
+    <p>Estado: {{ data.estado }}</p>
+
+    <button ion-button color="secondary" ng-click="update()">Procesar</button>
+  </ion-content>
+</ion-view>
